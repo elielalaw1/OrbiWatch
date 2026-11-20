@@ -1,5 +1,17 @@
 # Orbi for Apple Watch
 
+## Installera via din iPhone
+
+Du behöver en Mac med Xcode som stöder dina enheters systemversioner, en iPhone med iOS 17 eller senare och en parkopplad Apple Watch med watchOS 10 eller senare.
+
+1. Hämta repot via **Code → Download ZIP** och packa upp det. Öppna **OrbiPhoneCompanion/Orbi.xcodeproj**.
+2. Lägg till ditt Apple-konto i Xcodes inställningar. Markera det blå projektet och välj **Project → Orbi → Build Settings → All**. Sök efter **ORBI_PHONE_ID** och ange ett unikt id, exempelvis `se.dittnamn.orbi`, för både Debug och Release. Klockans id och kopplingen mellan apparna följer automatiskt.
+3. Under **Targets** väljer du först **OrbiPhone** och sedan **Orbi**. Under **Signing & Capabilities** för varje target, välj ditt eget **Team** och aktivera automatisk signering.
+4. Anslut din iPhone till datorn och godkänn parkoppling och utvecklarläge på enheterna om Xcode ber om det. Välj schemat **OrbiPhone**, välj din iPhone och tryck **⌘R**.
+5. Öppna appen **Watch** på iPhone. Om Orbi visas under **Tillgängliga appar**, tryck **Installera**. Öppna Orbi på klockan och ge mikrofonåtkomst.
+
+För den separata watchOS-appen finns Xcode-instruktioner nedan. Det alternativa skriptet i `Tools/install_watch.py` kräver Python med `pymobiledevice3`, en redan betrodd parkoppling och en watchOS-app signerad för just din klocka. Kör med `--help` för argumenten.
+
 For the iPhone app that embeds Orbi for Apple Watch, open **[OrbiPhoneCompanion/Orbi.xcodeproj](OrbiPhoneCompanion/Orbi.xcodeproj)** and select the **OrbiPhone** scheme. This companion variant is experimental. The physical Watch installation was verified with the standalone project described below.
 
 A native English-language app for Apple Watch SE (2nd generation), watchOS 10 or later.

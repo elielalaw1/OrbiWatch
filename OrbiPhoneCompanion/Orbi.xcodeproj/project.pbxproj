@@ -287,6 +287,8 @@
 		<dict>
 			<key>buildSettings</key>
 			<dict>
+				<key>ORBI_PHONE_ID</key>
+				<string>com.example.orbi</string>
 				<key>CLANG_ENABLE_MODULES</key>
 				<string>YES</string>
 				<key>DEBUG_INFORMATION_FORMAT</key>
@@ -311,6 +313,8 @@
 		<dict>
 			<key>buildSettings</key>
 			<dict>
+				<key>ORBI_PHONE_ID</key>
+				<string>com.example.orbi</string>
 				<key>CLANG_ENABLE_MODULES</key>
 				<string>YES</string>
 				<key>DEBUG_INFORMATION_FORMAT</key>
@@ -340,7 +344,7 @@
 				<key>CURRENT_PROJECT_VERSION</key>
 				<string>1</string>
 				<key>DEVELOPMENT_TEAM</key>
-				<string>292C46UUAL</string>
+				<string></string>
 				<key>ENABLE_PREVIEWS</key>
 				<string>YES</string>
 				<key>GENERATE_INFOPLIST_FILE</key>
@@ -355,7 +359,7 @@
 				<key>MARKETING_VERSION</key>
 				<string>1.0</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.eli.orbi.quietwatch</string>
+				<string>$(ORBI_PHONE_ID).quietwatch</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>SDKROOT</key>
@@ -383,7 +387,7 @@
 				<key>CURRENT_PROJECT_VERSION</key>
 				<string>1</string>
 				<key>DEVELOPMENT_TEAM</key>
-				<string>292C46UUAL</string>
+				<string></string>
 				<key>ENABLE_PREVIEWS</key>
 				<string>YES</string>
 				<key>GENERATE_INFOPLIST_FILE</key>
@@ -398,7 +402,7 @@
 				<key>MARKETING_VERSION</key>
 				<string>1.0</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.eli.orbi.quietwatch</string>
+				<string>$(ORBI_PHONE_ID).quietwatch</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>SDKROOT</key>
@@ -600,7 +604,7 @@
 				<key>CURRENT_PROJECT_VERSION</key>
 				<string>1</string>
 				<key>DEVELOPMENT_TEAM</key>
-				<string>292C46UUAL</string>
+				<string></string>
 				<key>GENERATE_INFOPLIST_FILE</key>
 				<string>YES</string>
 				<key>INFOPLIST_KEY_CFBundleDisplayName</key>
@@ -612,7 +616,7 @@
 				<key>MARKETING_VERSION</key>
 				<string>1.0</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.eli.orbi</string>
+				<string>$(ORBI_PHONE_ID)</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>SDKROOT</key>
@@ -638,7 +642,7 @@
 				<key>CURRENT_PROJECT_VERSION</key>
 				<string>1</string>
 				<key>DEVELOPMENT_TEAM</key>
-				<string>292C46UUAL</string>
+				<string></string>
 				<key>GENERATE_INFOPLIST_FILE</key>
 				<string>YES</string>
 				<key>INFOPLIST_KEY_CFBundleDisplayName</key>
@@ -650,7 +654,7 @@
 				<key>MARKETING_VERSION</key>
 				<string>1.0</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.eli.orbi</string>
+				<string>$(ORBI_PHONE_ID)</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 				<key>SDKROOT</key>
