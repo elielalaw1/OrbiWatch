@@ -1,5 +1,7 @@
 # Orbi for Apple Watch
 
+For the iPhone app that embeds Orbi for Apple Watch, open **[OrbiPhoneCompanion/Orbi.xcodeproj](OrbiPhoneCompanion/Orbi.xcodeproj)** and select the **OrbiPhone** scheme. This companion variant is experimental. The physical Watch installation was verified with the standalone project described below.
+
 A native English-language app for Apple Watch SE (2nd generation), watchOS 10 or later.
 
 The display is Orbi's entire face. It adapts the latest local Wisdome version at commit `8406510`: the 1.15-unit pixel sampling grid, large light eyes, pupils, glints, eyebrows and curved mouth. The dome projection is mapped to a flat watch screen. The sleep, wake and SHHH poses extend that character for this app.
