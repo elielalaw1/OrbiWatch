@@ -1,0 +1,27 @@
+// !$*UTF8*$!
+{archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+000000000000000000000014 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbiApp.swift; sourceTree = "<group>"; };
+00000000000000000000001E = {isa = PBXBuildFile; fileRef = 000000000000000000000014; };
+000000000000000000000015 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+00000000000000000000001F = {isa = PBXBuildFile; fileRef = 000000000000000000000015; };
+000000000000000000000016 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietMonitor.swift; sourceTree = "<group>"; };
+000000000000000000000020 = {isa = PBXBuildFile; fileRef = 000000000000000000000016; };
+000000000000000000000017 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbiFace.swift; sourceTree = "<group>"; };
+000000000000000000000021 = {isa = PBXBuildFile; fileRef = 000000000000000000000017; };
+000000000000000000000018 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+000000000000000000000019 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Orbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+000000000000000000000001 = {isa = PBXProject; attributes = {LastUpgradeCheck = 1600; TargetAttributes = {000000000000000000000002 = {CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 000000000000000000000028; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = 000000000000000000000003; productRefGroup = 000000000000000000000005; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000002); };
+000000000000000000000002 = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000029; buildPhases = (000000000000000000000006, 000000000000000000000007, 000000000000000000000008); buildRules = (); dependencies = (); name = Orbi; productName = Orbi; productReference = 000000000000000000000019; productType = "com.apple.product-type.application"; };
+000000000000000000000003 = {isa = PBXGroup; children = (000000000000000000000004, 000000000000000000000005); sourceTree = "<group>"; };
+000000000000000000000004 = {isa = PBXGroup; children = (000000000000000000000014, 000000000000000000000015, 000000000000000000000016, 000000000000000000000017, 000000000000000000000018); path = Orbi; sourceTree = "<group>"; };
+000000000000000000000005 = {isa = PBXGroup; children = (000000000000000000000019); name = Products; sourceTree = "<group>"; };
+000000000000000000000006 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (00000000000000000000001E, 00000000000000000000001F, 000000000000000000000020, 000000000000000000000021); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000007 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000008 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+00000000000000000000002A = {isa = XCBuildConfiguration; name = Debug; buildSettings = {CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; SDKROOT = watchos; WATCHOS_DEPLOYMENT_TARGET = 10.0; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; DEBUG_INFORMATION_FORMAT = dwarf; }; };
+00000000000000000000002C = {isa = XCBuildConfiguration; name = Debug; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Orbi/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.eli.orbi.quietwatch; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = watchos; SUPPORTED_PLATFORMS = "watchos watchsimulator"; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; SWIFT_EMIT_LOC_STRINGS = YES; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); }; };
+00000000000000000000002B = {isa = XCBuildConfiguration; name = Release; buildSettings = {CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; SDKROOT = watchos; WATCHOS_DEPLOYMENT_TARGET = 10.0; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; }; };
+00000000000000000000002D = {isa = XCBuildConfiguration; name = Release; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Orbi/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.eli.orbi.quietwatch; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = watchos; SUPPORTED_PLATFORMS = "watchos watchsimulator"; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 10.0; SWIFT_EMIT_LOC_STRINGS = YES; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); }; };
+000000000000000000000028 = {isa = XCConfigurationList; buildConfigurations = (00000000000000000000002A, 00000000000000000000002B); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+000000000000000000000029 = {isa = XCConfigurationList; buildConfigurations = (00000000000000000000002C, 00000000000000000000002D); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+}; rootObject = 000000000000000000000001; }
