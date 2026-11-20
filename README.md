@@ -1,16 +1,16 @@
 # Orbi for Apple Watch
 
-## Installera via din iPhone
+## Install via your iPhone
 
-Du behöver en Mac med Xcode som stöder dina enheters systemversioner, en iPhone med iOS 17 eller senare och en parkopplad Apple Watch med watchOS 10 eller senare.
+You need a Mac with a version of Xcode that supports both devices, an iPhone running iOS 17 or later, and a paired Apple Watch running watchOS 10 or later.
 
-1. Hämta repot via **Code → Download ZIP** och packa upp det. Öppna **OrbiPhoneCompanion/Orbi.xcodeproj**.
-2. Lägg till ditt Apple-konto i Xcodes inställningar. Markera det blå projektet och välj **Project → Orbi → Build Settings → All**. Sök efter **ORBI_PHONE_ID** och ange ett unikt id, exempelvis `se.dittnamn.orbi`, för både Debug och Release. Klockans id och kopplingen mellan apparna följer automatiskt.
-3. Under **Targets** väljer du först **OrbiPhone** och sedan **Orbi**. Under **Signing & Capabilities** för varje target, välj ditt eget **Team** och aktivera automatisk signering.
-4. Anslut din iPhone till datorn och godkänn parkoppling och utvecklarläge på enheterna om Xcode ber om det. Välj schemat **OrbiPhone**, välj din iPhone och tryck **⌘R**.
-5. Öppna appen **Watch** på iPhone. Om Orbi visas under **Tillgängliga appar**, tryck **Installera**. Öppna Orbi på klockan och ge mikrofonåtkomst.
+1. Download the project using **Code → Download ZIP**, unzip it, and open **OrbiPhoneCompanion/Orbi.xcodeproj**.
+2. Add your Apple Account in Xcode settings. In the project navigator, select the blue **Orbi** project, then select **Orbi** under **Project**. Open **Build Settings**, choose **All**, and search for `ORBI_PHONE_ID`. Set a unique bundle identifier, such as `com.yourname.orbi`, for both Debug and Release. The project uses it to configure both apps and link them together.
+3. Under **Targets**, select **OrbiPhone**. In **Signing & Capabilities**, select your **Team** and enable **Automatically manage signing**. Repeat for the **Orbi** target.
+4. Connect your iPhone to your Mac and follow any prompts to pair the devices or enable Developer Mode. Select the **OrbiPhone** scheme, choose your iPhone as the run destination, and press **⌘R**.
+5. Open the **Watch** app on your iPhone. If Orbi appears under **Available Apps**, tap **Install**. Open Orbi on your watch and allow microphone access.
 
-För den separata watchOS-appen finns Xcode-instruktioner nedan. Det alternativa skriptet i `Tools/install_watch.py` kräver Python med `pymobiledevice3`, en redan betrodd parkoppling och en watchOS-app signerad för just din klocka. Kör med `--help` för argumenten.
+For the standalone watchOS app, follow the Xcode instructions below. The alternative installer, `Tools/install_watch.py`, requires Python with `pymobiledevice3`, an existing trusted pairing, and a watchOS app signed for your watch. Run the script with `--help` to see its arguments.
 
 For the iPhone app that embeds Orbi for Apple Watch, open **[OrbiPhoneCompanion/Orbi.xcodeproj](OrbiPhoneCompanion/Orbi.xcodeproj)** and select the **OrbiPhone** scheme. This companion variant is experimental. The physical Watch installation was verified with the standalone project described below.
 
